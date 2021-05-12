@@ -1,6 +1,6 @@
 # This is my coding challenge diary
 
-## As a coder it can be easy to fall into the same old tricks but having a daily practice can make you more flexible and smarter.  If you can code everyday you are bound to become a master. Follow the daily challenges I am trying each day here. Feel to copy this README and do them with me. 
+## As a coder it can be easy to fall into the same old tricks but having a daily practice can make you more flexible and smarter.  If you can code everyday you are bound to become a master. Follow the daily challenges I am trying each day here. Feel free to copy this README and do them with me. 
 ## I will be tracking my coding challenge solutions here day by day. Obiviously there are many ways to solve these challenges, so don't just accept my solutions as the best solution. If you have better solution I'd love to know. 
 ## My email is howardjake9512@gmail.com
 (https://www.freecodecamp.org/ is my main source but I may branch out if need be) 
@@ -18,7 +18,7 @@ Expected ouput at 100 doors.
 ```
 [ 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 ]
 ```
-Language I used: (Javascript)
+### Language I used: (Javascript)
 # Day 2
 
 ## Find the Symmetric Difference
@@ -29,4 +29,4 @@ Language I used: (Javascript)
 ### Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
 ![Day2Exepected](./img/Day2Expectations.PNG)
-Language I used: (Javascript)
+### Language I used: (Javascript)
