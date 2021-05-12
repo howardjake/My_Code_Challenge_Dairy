@@ -28,5 +28,5 @@ Language I used: (Javascript)
 
 ### Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
-![Day2Exepected](img\Day2Expectations.PNG)
+![Day2Exepected](./img/Day2Expectations.PNG)
 Language I used: (Javascript)
