@@ -3,7 +3,7 @@
 ## This is like a little problem solving excercise. I'm hoping this will help me and inspire others to try the same. If you can code everyday you are bound to get better
 (https://www.freecodecamp.org/ is my main source but I may branch out if need be) 
 
-![code cat](img\codecat.gif)
+![code cat](./img/codecat.gif)
 
 # Day 1
 
