@@ -1,7 +1,8 @@
 # This is my coding challenge diary
 
 ## As a coder it can be easy to fall into the same old tricks but having a daily practice can make you more flexible and smarter.  If you can code everyday you are bound to become a master. Follow my daily challenges each day here. Try them yourself. 
-##I will be tracking my coding challenge solutions here day by day. 
+## I will be tracking my coding challenge solutions here day by day. Obiviously there are many ways to solve these challenges, so don't just accept my solutions as the best solution. If you have better solution I'd love to know. 
+## My email is howardjake9512@gmail.com
 (https://www.freecodecamp.org/ is my main source but I may branch out if need be) 
 
 ![code cat](./img/codecat.gif)
