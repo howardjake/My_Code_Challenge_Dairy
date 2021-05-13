@@ -7,7 +7,7 @@
 
 ![code cat](./img/codecat.gif)
 
-# Day 1 
+# Day 1 (FreeCodeCamp)
 
 ## 100 doors
 ### There are 100 doors in a row that are all initially closed. You make 100 passes by the doors. The first time through, visit every door and 'toggle' the door (if the door is closed, open it; if it is open, close it). The second time, only visit every 2nd door (i.e., door #2, #4, #6, ...) and toggle it. The third time, visit every 3rd door (i.e., door #3, #6, #9, ...), etc., until you only visit the 100th door.
@@ -19,7 +19,7 @@ Expected ouput at 100 doors.
 [ 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 ]
 ```
 Language I used: (Javascript)
-# Day 2
+# Day 2 (FreeCodeCamp)
 
 ## Find the Symmetric Difference
 ### The mathematical term symmetric difference (△ or ⊕) of two sets is the set of elements which are in either of the two sets but not in both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B = {1, 4}.
@@ -29,4 +29,21 @@ Language I used: (Javascript)
 ### Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
 ![Day2Exepected](img\Day2Expectations.PNG)
-Language I used: (Javascript)
+# Day 3 (Codewars)
+
+## Sum of Digits / Digital Root 
+
+### Digital root is the recursive sum of all the digits in a number.
+
+### Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+
+Example:
+```
+    16  -->  1 + 6 = 7
+   942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
+493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
+```
+
+
