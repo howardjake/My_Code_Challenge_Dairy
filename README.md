@@ -9,10 +9,11 @@
 
 # Day 1 (FreeCodeCamp)
 
-## 100 doors
-### There are 100 doors in a row that are all initially closed. You make 100 passes by the doors. The first time through, visit every door and 'toggle' the door (if the door is closed, open it; if it is open, close it). The second time, only visit every 2nd door (i.e., door #2, #4, #6, ...) and toggle it. The third time, visit every 3rd door (i.e., door #3, #6, #9, ...), etc., until you only visit the 100th door.
+// 100 doors
 
-### Implement a function to determine the state of the doors after the last pass. Return the final result in an array, with only the door number included in the array if it is open.
+There are 100 doors in a row that are all initially closed. You make 100 passes by the doors. The first time through, visit every door and 'toggle' the door (if the door is closed, open it; if it is open, close it). The second time, only visit every 2nd door (i.e., door #2, #4, #6, ...) and toggle it. The third time, visit every 3rd door (i.e., door #3, #6, #9, ...), etc., until you only visit the 100th door.
+
+Implement a function to determine the state of the doors after the last pass. Return the final result in an array, with only the door number included in the array if it is open.
 
 Expected ouput at 100 doors.
 ```
@@ -21,23 +22,24 @@ Expected ouput at 100 doors.
 Language I used: (Javascript)
 # Day 2 (FreeCodeCamp)
 
-## Find the Symmetric Difference
-### The mathematical term symmetric difference (△ or ⊕) of two sets is the set of elements which are in either of the two sets but not in both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B = {1, 4}.
+// Find the Symmetric Difference
 
-### Symmetric difference is a binary operation, which means it operates on only two elements. So to evaluate an expression involving symmetric differences among three elements (A △ B △ C), you must complete one operation at a time. Thus, for sets A and B above, and C = {2, 3}, A △ B △ C = (A △ B) △ C = {1, 4} △ {2, 3} = {1, 2, 3, 4}.
+The mathematical term symmetric difference (△ or ⊕) of two sets is the set of elements which are in either of the two sets but not in both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B = {1, 4}.
 
-### Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
+Symmetric difference is a binary operation, which means it operates on only two elements. So to evaluate an expression involving symmetric differences among three elements (A △ B △ C), you must complete one operation at a time. Thus, for sets A and B above, and C = {2, 3}, A △ B △ C = (A △ B) △ C = {1, 4} △ {2, 3} = {1, 2, 3, 4}.
+
+Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
 ![Day2Exepected](./img/Day2Expectations.PNG)
 
 Language I used: (Javascript)
 # Day 3 (Codewars)
 
-## Sum of Digits / Digital Root 
+// Sum of Digits / Digital Root 
 
-### Digital root is the recursive sum of all the digits in a number.
+Digital root is the recursive sum of all the digits in a number.
 
-### Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
 
 
 Example:
@@ -51,12 +53,13 @@ Example:
 Language I used: (Javascript)
 # Day 4 (FreeCodeCamp)
 
-## Pairwise
-### Given an array arr, find element pairs whose sum equal the second argument arg and return the sum of their indices.
+// Pairwise
 
-### You may use multiple pairs that have the same numeric elements but different indices. Each pair should use the lowest possible available indices. Once an element has been used it cannot be reused to pair with another element. For instance, pairwise([1, 1, 2], 3) creates a pair [2, 1] using the 1 at index 0 rather than the 1 at index 1, because 0+2 < 1+2.
+Given an array arr, find element pairs whose sum equal the second argument arg and return the sum of their indices.
 
-### For example pairwise([7, 9, 11, 13, 15], 20) returns 6. The pairs that sum to 20 are [7, 13] and [9, 11]. We can then write out the array with their indices and values.
+You may use multiple pairs that have the same numeric elements but different indices. Each pair should use the lowest possible available indices. Once an element has been used it cannot be reused to pair with another element. For instance, pairwise([1, 1, 2], 3) creates a pair [2, 1] using the 1 at index 0 rather than the 1 at index 1, because 0+2 < 1+2.
+
+For example pairwise([7, 9, 11, 13, 15], 20) returns 6. The pairs that sum to 20 are [7, 13] and [9, 11]. We can then write out the array with their indices and values.
 
 ### Index	0	1	2	3	4
 ### Value	7	9	11	13	15
@@ -75,14 +78,15 @@ Language I used: (Javascript)
 
 # Day 5
 
-## Implement Bubble SortPassed
-### This is the first of several challenges on sorting algorithms. Given an array of unsorted items, we want to be able to return a sorted array. We will see several different methods to do this and learn some tradeoffs between these different approaches. While most modern languages have built-in sorting methods for operations like this, it is still important to understand some of the common basic approaches and learn how they can be implemented.
+// Implement Bubble SortPassed
 
-### Here we will see bubble sort. The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted values towards the end, iterating through the array until it is completely sorted. It does this by comparing adjacent items and swapping them if they are out of order. The method continues looping through the array until no swaps occur at which point the array is sorted.
+This is the first of several challenges on sorting algorithms. Given an array of unsorted items, we want to be able to return a sorted array. We will see several different methods to do this and learn some tradeoffs between these different approaches. While most modern languages have built-in sorting methods for operations like this, it is still important to understand some of the common basic approaches and learn how they can be implemented.
 
-### This method requires multiple iterations through the array and for average and worst cases has quadratic time complexity. While simple, it is usually impractical in most situations.
+ Here we will see bubble sort. The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted values towards the end, iterating through the array until it is completely sorted. It does this by comparing adjacent items and swapping them if they are out of order. The method continues looping through the array until no swaps occur at which point the array is sorted.
 
-### Instructions: Write a function bubbleSort which takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.
+This method requires multiple iterations through the array and for average and worst cases has quadratic time complexity. While simple, it is usually impractical in most situations.
+
+Instructions: Write a function bubbleSort which takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.
 
 ### Starter Code
 ```
@@ -94,10 +98,26 @@ function bubbleSort(array) {
 
 bubbleSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]);
 ```
-
+Language I used: (Javascript)
 ### Expected Output
 ```
 
 [ 1, 1, 2, 2, 4, 8, 32, 43, 43, 55, 63, 92, 123, 123, 234, 345, 5643 ]
 ```
+# Day 6 (CodeWars via [jacobb](https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/javascript))
+// Jaden Casing Strings
 
+![Jaden-hame-ha](https://media.giphy.com/media/YlInaCVFhV5ekunFwW/giphy.gif)
+
+Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.
+
+Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+
+[Link to Jaden's former Twitter account @officialjaden via archive.org](https://web.archive.org/web/20190624190255/https://twitter.com/officialjaden)
+
+### Example:
+```
+Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+```
+Language I used: (Javascript)
