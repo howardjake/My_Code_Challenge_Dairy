@@ -218,3 +218,30 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 ```
 
 Language I used: (Python)
+
+# Day 13 (CodeWars via [cmgerber](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript))
+
+// List Filtering
+
+In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+Example
+```
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+```
+Language I used: (Javascript)
+
+# Day 13 (CodeWars via [jhoffner](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/python))
+
+// Split Strings
+
+Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
+
+Examples:
+```
+solution('abc') # should return ['ab', 'c_']
+solution('abcdef') # should return ['ab', 'cd', 'ef']
+```
+Language I used: (Python)
