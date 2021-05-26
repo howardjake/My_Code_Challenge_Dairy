@@ -233,7 +233,7 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 ```
 Language I used: (Javascript)
 
-# Day 13 (CodeWars via [jhoffner](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/python))
+# Day 14 (CodeWars via [jhoffner](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/python))
 
 // Split Strings
 
@@ -245,3 +245,18 @@ solution('abc') # should return ['ab', 'c_']
 solution('abcdef') # should return ['ab', 'cd', 'ef']
 ```
 Language I used: (Python)
+
+# Day 15 (CodeWars via [g964](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/javascript))
+
+// Mumbling
+
+This time no story, no theory. The examples below show you how to write function accum:
+
+Examples:
+
+```
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+```
+Language I used: (Javascript)
