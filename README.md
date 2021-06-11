@@ -335,3 +335,53 @@ Example
 "aA11" -> 2 # 'a' and '1'
 "ABBA" -> 2 # 'A' and 'B' each occur twice
 ```
+
+# Day 20 (CodeWars via [raulbc777](https://www.codewars.com/kata/5626b561280a42ecc50000d1/train/javascript))
+
+// Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!
+
+The number 89 is the first integer with more than one digit that fulfills the property partially introduced in the title of this kata. What's the use of saying "Eureka"? Because this sum gives the same number.
+
+In effect: 89 = 8^1 + 9^2
+
+The next number in having this property is 135.
+
+See this property again: 135 = 1^1 + 3^2 + 5^3
+
+We need a function to collect these numbers, that may receive two integers a, b that defines the range [a, b] (inclusive) and outputs a list of the sorted numbers in the range that fulfills the property described above.
+
+Let's see some cases:
+```
+sumDigPow(1, 10) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+sumDigPow(1, 100) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 89]
+```
+If there are no numbers of this kind in the range [a, b] the function should output an empty list.
+```
+sumDigPow(90, 100) == []
+```
+
+# Day 21 (CodeWars via [St3f4n](https://www.codewars.com/kata/583203e6eb35d7980400002a/train/javascript))
+
+// Count the smiley faces!
+
+Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
+
+Rules for a smiling face:
+
+Each smiley face must contain a valid pair of eyes. Eyes can be marked as : or ;
+A smiley face can have a nose but it does not have to. Valid characters for a nose are - or ~
+Every smiling face must have a smiling mouth that should be marked with either ) or D
+No additional characters are allowed except for those mentioned.
+
+Valid smiley face examples: :) :D ;-D :~)
+Invalid smiley faces: ;( :> :} :]
+
+Example
+```
+countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
+countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
+countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
+```
+Note
+In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
