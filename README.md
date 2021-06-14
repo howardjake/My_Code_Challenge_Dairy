@@ -360,7 +360,7 @@ If there are no numbers of this kind in the range [a, b] the function should out
 ```
 sumDigPow(90, 100) == []
 ```
-
+Language I used: (Javascript)
 # Day 21 (CodeWars via [St3f4n](https://www.codewars.com/kata/583203e6eb35d7980400002a/train/javascript))
 
 // Count the smiley faces!
@@ -386,6 +386,8 @@ countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
 Note
 In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
 
+Language I used: (Javascript)
+
 # Day 22 ([FreeCodeCamp](https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/create-a-stack-class))
 
 // Create a Stack Class
@@ -394,3 +396,18 @@ In the last section, we talked about what a stack is and how we can use an array
 
 Write a push method that pushes an element to the top of the stack, a pop method that removes and returns the element on the top of the stack, a peek method that looks at the top element in the stack, an isEmpty method that checks if the stack is empty, and a clear method that removes all elements from the stack. Normally stacks don't have this, but we've added a print helper method that console logs the collection.
 
+Language I used: (Javascript)
+
+# Day 23 ([FreeCodeCamp](https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/create-a-queue-class))
+
+// Create a Queue Class
+
+Like stacks, queues are a collection of elements. But unlike stacks, queues follow the FIFO (First-In First-Out) principle. Elements added to a queue are pushed to the tail, or the end, of the queue, and only the element at the front of the queue is allowed to be removed.
+
+We could use an array to represent a queue, but just like stacks, we want to limit the amount of control we have over our queues.
+
+The two main methods of a queue class is the enqueue and the dequeue method. The enqueue method pushes an element to the tail of the queue, and the dequeue method removes and returns the element at the front of the queue. Other useful methods are the front, size, and isEmpty methods.
+
+Write an enqueue method that pushes an element to the tail of the queue, a dequeue method that removes and returns the front element, a front method that lets us see the front element, a size method that shows the length, and an isEmpty method to check if the queue is empty.
+
+Language I used: (Javascript)
