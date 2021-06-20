@@ -411,3 +411,39 @@ The two main methods of a queue class is the enqueue and the dequeue method. The
 Write an enqueue method that pushes an element to the tail of the queue, a dequeue method that removes and returns the front element, a front method that lets us see the front element, a size method that shows the length, and an isEmpty method to check if the queue is empty.
 
 Language I used: (Javascript)
+
+# Day 24 (CodeWars via [jhoffner](https://www.codewars.com/kata/51b6249c4612257ac0000005/train/javascript))
+
+// Roman Numerals Decoder
+
+Create a function that takes a Roman numeral as its argument and returns its value as a numeric decimal integer. You don't need to validate the form of the Roman numeral.
+
+Modern Roman numerals are written by expressing each decimal digit of the number to be encoded separately, starting with the leftmost digit and skipping any 0s. So 1990 is rendered "MCMXC" (1000 = M, 900 = CM, 90 = XC) and 2008 is rendered "MMVIII" (2000 = MM, 8 = VIII). The Roman numeral for 1666, "MDCLXVI", uses each letter in descending order.
+
+Example:
+```  
+solution('XXI'); // should return 21
+```
+Language I used: (Javascript)
+# Day 25 (CodeWars via [user5036852](https://www.codewars.com/kata/57814d79a56c88e3e0000786/train/javascript))
+
+// Simple Encryption #1 - Alternating Split
+
+For building the encrypted string:
+Take every 2nd char from the string, then the other chars, that are not every 2nd char, and concat them as new String.
+Do this n times!
+
+Examples:
+```
+"This is a test!", 1 -> "hsi  etTi sats!"
+"This is a test!", 2 -> "hsi  etTi sats!" -> "s eT ashi tist!"
+```
+Write two methods:
+```
+function encrypt(text, n)
+function decrypt(encryptedText, n)
+```
+For both methods:
+If the input-string is null or empty return exactly this value!
+If n is <= 0 then return the input text.
+Language I used: (Javascript)
