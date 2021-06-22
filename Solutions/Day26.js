@@ -39,62 +39,79 @@
 const region = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;-?! '()$%&"`.split('')
 
 function encrypt(text) {
-   if(text) {
-        let original = text.split('')
-        let apart = text.split('')
-        apart.forEach((item, idx)=>{
-            if ((idx -1) % 2 == 0) {
-                if (region.indexOf(item) > 25 && region.indexOf(item) < 51) {
-                    apart[idx] = apart[idx].toUpperCase()
-                    original[idx] = original[idx].toUpperCase()
-                }
-                if (region.indexOf(item) <= 25) {
-                    apart[idx] = apart[idx].toLowerCase()
-                    original[idx] = original[idx].toLowerCase()
-                }
-            }
-        })
-        for (let i = 1; i < apart.length; i++) {
-            let diff;
-            let swap;
-            diff = region.indexOf(original[i - 1]) - region.indexOf(original[i])
-            if (diff < 0) {
-                swap = diff + 77
-            } else {
-                swap = diff
-            }
-            apart[i] = region[swap]
-        }
-        apart[0] = region[76 - region.indexOf(apart[0])]
-        return apart.join('')
-    } else {
-        return text
-    }
+    if(text) {
+    let apart = text.split('')
+    apart.forEach((item, idx) => {
+        if (!region.includes(item)) {
+            throw "You can only use the character defined in the region"
+        } 
+    }) 
+             let original = text.split('')
+             apart.forEach((item, idx)=>{
+                 if ((idx -1) % 2 == 0) {
+                     if (region.indexOf(item) > 25 && region.indexOf(item) < 51) {
+                         apart[idx] = apart[idx].toUpperCase()
+                         original[idx] = original[idx].toUpperCase()
+                     }
+                     if (region.indexOf(item) <= 25) {
+                         apart[idx] = apart[idx].toLowerCase()
+                         original[idx] = original[idx].toLowerCase()
+                     }
+                 }
+             })
+             for (let i = 1; i < apart.length; i++) {
+                 let diff;
+                 let swap;
+                 diff = region.indexOf(original[i - 1]) - region.indexOf(original[i])
+                 if (diff < 0) {
+                     swap = diff + 77
+                 } else {
+                     swap = diff
+                 }
+                 apart[i] = region[swap]
+             }
+             apart[0] = region[76 - region.indexOf(apart[0])]
+             return apart.join('')
+         } else {
+             return text
+         }
 }
 
 function decrypt(encryptedText) {
     if (encryptedText) {
-        let apart = encryptedText.split('')
-        apart[0] = region[76 - region.indexOf(apart[0])]
-        for (let i = 1; i < apart.length; i++) {
-            let diff = (-2 * ((region.indexOf(apart[i]) - 77) - region.indexOf(apart[i -1])))/2
-            if (diff >= 77) {
-                diff = diff - 77
+    let apart = encryptedText.split('')
+    apart.forEach((item, idx) => {
+        if (!region.includes(item)) {
+            throw "You can only use the character defined in the region"
+        } 
+    }) 
+            apart[0] = region[76 - region.indexOf(apart[0])]
+            for (let i = 1; i < apart.length; i++) {
+                let diff = (-2 * ((region.indexOf(apart[i]) - 77) - region.indexOf(apart[i -1])))/2
+                if (diff >= 77) {
+                    diff = diff - 77
+                }
+                apart[i] = region[diff]
             }
-            apart[i] = region[diff]
+            apart.forEach((item, idx)=>{
+                if ((idx -1) % 2 == 0) {
+                    if (region.indexOf(item) > 25 && region.indexOf(item) < 52) {
+                        apart[idx] = apart[idx].toUpperCase()
+                    }
+                    if (region.indexOf(item) <= 25) {
+                        apart[idx] = apart[idx].toLowerCase()
+                    }
+                }
+            })
+            return apart.join('')
+        } else {
+            return encryptedText
         }
-        apart.forEach((item, idx)=>{
-            if ((idx -1) % 2 == 0) {
-                if (region.indexOf(item) > 25 && region.indexOf(item) < 52) {
-                    apart[idx] = apart[idx].toUpperCase()
-                }
-                if (region.indexOf(item) <= 25) {
-                    apart[idx] = apart[idx].toLowerCase()
-                }
-            }
-        })
-        return apart.join('')
-    } else {
-        return encryptedText
-    }
+    
 }
+
+
+console.log(encrypt(`0DFsgXvJy&-YMwaiZL -?g;qKQOLjPCBTI1gc,miVWhUTQj!4z3gBPrYVwurgG5!'`))
+
+// YXY:,8CM.0JQm?$S8;tD"9SxGtc2C(n0I.6v3qZe:yP:b2HsMF$xFl&'d"1d.A0-&
+// YXY:,8CM.0JQm?$S8;tD"9SxGtc2C(n0I.6v3qZe:yP:b2HsMfvxFl&\'d"1d.A0-&
