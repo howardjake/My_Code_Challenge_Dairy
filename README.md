@@ -298,19 +298,10 @@ Examples:
 s="aaabbbbhaijjjm"
 error_printer(s) => "0/14"
 
-s="aaaxbbbbyyhwawiwjjjwwm"
-error_printer(s) => "8/22"
-```
-Language I used: (Python)
-
-# Day 18 (CosdeWars via [xDranik](https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript))
-
-// Stop gninnipS My sdroW!
-
-Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (like the name of this kata).
-
+s="aaaxbbbbyyhwawiwif (input.length)
 Strings passed in will consist of only letters and spaces.
 Spaces will be included only when more than one word is present.
+```
 Examples:
 ```
 spinWords("Hey fellow warriors") => "Hey wollef sroirraw" 
@@ -381,7 +372,7 @@ Example
 ```
 countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
 countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
-countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
+countSmileys([]', ':[', ';*', ':$', ';-D']); // should return 1;
 ```
 Note
 In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
@@ -528,7 +519,7 @@ SS = seconds, padded to 2 digits, range: 00 - 59
 The maximum time never exceeds 359999 (99:59:59)
 
 Language I used: (Javascript)
-# Day29 (CodeWars via [xcthulhu](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/python))
+# Day 29 (CodeWars via [xcthulhu](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/python))
 
 // Moving Zeros To The End
 
@@ -539,3 +530,13 @@ move_zeros([1, 0, 1, 2, 0, 1, 3]) # returns [1, 1, 2, 1, 3, 0, 0]
 ```
 
 Language I used: (Python)
+
+# Day 30 (CodeWars via [Rubikan](https://www.codewars.com/kata/530e15517bc88ac656000716/train/python))
+
+Rot13
+
+ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet. ROT13 is an example of the Caesar cipher.
+
+Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".
+
+Please note that using encode is considered cheating.
