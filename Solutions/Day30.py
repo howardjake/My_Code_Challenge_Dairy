@@ -17,6 +17,8 @@ def rot13(message):
             key = upper
         if alph.index(x) <= 25:
             key = low
+        if alph.index(x) == None:
+            new.append(x)
         amount = (key.index(x)) + 13
         if amount > 26:
             amount = amount - 26
