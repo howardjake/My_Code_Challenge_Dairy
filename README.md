@@ -540,3 +540,20 @@ ROT13 is a simple letter substitution cipher that replaces a letter with the let
 Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".
 
 Please note that using encode is considered cheating.
+
+Language I used: (Python)
+
+# Day 31 (CodeWars via [knotman90](https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/python))
+
+// Maximum subarray sum
+
+The maximum sum subarray problem consists in finding the maximum sum of a contiguous subsequence in an array or list of integers:
+```
+max_sequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+# should be 6: [4, -1, 2, 1]
+```
+Easy case is when the list is made up of only positive numbers and the maximum sum is the sum of the whole array. If the list is made up of only negative numbers, return 0 instead.
+
+Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
+
+Language I used: (Python)
