@@ -558,7 +558,7 @@ Empty list is considered to have zero greatest sum. Note that the empty list or 
 
 Language I used: (Python)
 
-# Day 32 (CodeWars via []())
+# Day 32 (CodeWars via [g964](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/python))
 
 // Which are In?
 
