@@ -26,7 +26,7 @@ def rot13(message):
         space = ''
     return space.join(new)
 
-print(rot13("Codewars"))
+
 
     
 
