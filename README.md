@@ -908,3 +908,28 @@ A component will not appear at all if its value happens to be zero. Hence, 1 min
 A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
 
 Language I used: (Javascript)
+
+# Day 46 (CodeWars via [jhoffner](https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/javascript))
+
+Strip Comments
+
+Complete the solution so that it strips all text that follows any of a set of comment markers passed in. Any whitespace at the end of the line should also be stripped out.
+
+Example:
+
+Given an input string of:
+
+apples, pears # and bananas
+grapes
+bananas !apples
+The output expected would be:
+
+apples, pears
+grapes
+bananas
+The code would be called like so:
+
+var result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
+// result should == "apples, pears\ngrapes\nbananas"
+
+Language I used: (Javascript)
